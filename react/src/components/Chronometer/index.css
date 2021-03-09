@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+.timerContainer{
+  /*background-image: url('https://exito.vteximg.com.br/arquivos/banner-landing-aniversario.png');*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(244, 241, 247);
+  width: 100%;
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 22px;
+}
+
+.timer{
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  /*width: 100%;
+  height: 100%;*/
+}
+
+.timer div:first-child{
+  text-align: center;
+}
+
+.timer-icon{
+  font-size: 8em;
+}
+
+.timer div:first-child p{
+  color:rebeccapurple;
+}
+
+.timer div:last-child{
+  border: 1px solid rgb(245, 241, 241);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  /*margin-top: 3em;*/
+  padding:0.5em;
+  text-align: center;
+  align-items: baseline;
+}
+
+section p:first-child, .timer div:last-child span{
+  /*font-size: 2em;*/
+
+}
+
+.delineado{
+    background-color: black;
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 3px dashed #fff;
+}
+
+div section span{
+  font-size: 12px;
+}
+
+@media screen and (max-width: 480px){
+  .timer div:last-child{
+    /*margin-left: 2em;
+    margin-right: 2em;
+    padding:3em 1em;*/
+    font-size: 15px;
+  }
+
+  .timer{
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}

@@ -1,0 +1,421 @@
+{
+    "vtex.menu@2.x:menu#category-menu": {
+      "props": {
+        "experimentalOptimizeRendering": true
+      },
+      "children": [
+        "menu-item#category-apparel",
+        "menu-item#category-home",
+        "menu-item#more",
+        "menu-item#portafolio"
+      ]
+    },
+    "menu-item#category-apparel": {
+      "props": {
+        "id": "menu-item-category-apparel",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/apparel---accessories/",
+          "noFollow": false,
+          "tagTitle": "Apparel & Accessories",
+          "text": "Apparel & Accessories"
+        }
+      },
+      "blocks": [
+        "vtex.menu@2.x:submenu#category-apparel"
+      ]
+    },
+    "vtex.menu@2.x:submenu#category-apparel": {
+      "props": {
+        "width": "auto"
+      },
+      "children": [
+        "vtex.menu@2.x:menu#category-apparel"
+      ]
+    },
+    "vtex.menu@2.x:menu#category-apparel": {
+      "props": {
+        "orientation": "vertical"
+      },
+      "children": [
+        "menu-item#category-apparel-clothing",
+        "menu-item#category-apparel-accessories",
+        "menu-item#category-apparel-eyeglasses"
+      ]
+    },
+    "menu-item#category-apparel-clothing": {
+      "props": {
+        "id": "menu-item-category-apparel-clothing",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/apparel---accessories/clothing/",
+          "noFollow": false,
+          "tagTitle": "Clothing",
+          "text": "Clothing"
+        }
+      }
+    },
+    "menu-item#category-apparel-accessories": {
+      "props": {
+        "id": "menu-item-category-apparel-accessories",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/apparel---accessories/accessories/",
+          "noFollow": false,
+          "tagTitle": "Accessories",
+          "text": "Accessories"
+        }
+      }
+    },
+    "menu-item#category-apparel-eyeglasses": {
+      "props": {
+        "id": "menu-item-category-apparel-eyeglasses",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/apparel---accessories/eyeglasses/",
+          "noFollow": false,
+          "tagTitle": "Eyeglasses",
+          "text": "Eyeglasses"
+        }
+      }
+    },
+    "menu-item#category-home": {
+      "props": {
+        "id": "menu-item-category-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/home---decor/",
+          "noFollow": false,
+          "tagTitle": "Home & Decor",
+          "text": "Home & Decor"
+        }
+      }
+    },
+    "menu-item#more": {
+      "props": {
+        "id": "menu-item-custom-sale",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": true,
+          "tagTitle": "More",
+          "text": "More"
+        }
+      },
+      "blocks": [
+        "vtex.menu@2.x:submenu#more"
+      ]
+    },
+    "vtex.menu@2.x:submenu#more": {
+      "props": {
+        "width": "100%"
+      },
+      "children": [
+        "flex-layout.row#menu-more"
+      ]
+    },
+    "flex-layout.row#menu-more": {
+      "children": [
+        "flex-layout.col#menu-more-1"
+      ]
+    },
+    "flex-layout.col#menu-more-1": {
+      "children": [
+        "vtex.menu@2.x:menu#more"
+      ]
+    },
+    "vtex.menu@2.x:menu#more": {
+      "props": {
+        "orientation": "vertical"
+      },
+      "children": [
+        "menu-item#aniversario",
+        "menu-item#faq"
+      ]
+    },
+    "menu-item#aniversario": {
+      "props": {
+        "id": "menu-item-aniversario",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/aniversario",
+          "noFollow": true,
+          "tagTitle": "Aniversario",
+          "text": "Aniversario"
+        }
+      }
+    },
+    "menu-item#faq": {
+      "props": {
+        "id": "menu-item-faq",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/faq",
+          "noFollow": true,
+          "tagTitle": "FAQ",
+          "text": "FAQ"
+        }
+      }
+    },
+    "menu-item#contact-us": {
+      "props": {
+        "id": "menu-item-contact-us",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/contact-us",
+          "noFollow": true,
+          "tagTitle": "Contact Us",
+          "text": "Contact Us"
+        }
+      }
+    },
+    "menu-item#portafolio": {
+      "props": {
+        "id": "menu-item-portafolio",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": true,
+          "tagTitle": "Portafolio",
+          "text": "Portafolio"
+        }
+      },
+      "blocks": [
+        "vtex.menu@2.x:submenu#portafolio"
+      ]
+    },
+    "vtex.menu@2.x:submenu#portafolio": {
+      "props": {
+        "width": "100%"
+      },
+      "children": [
+        "flex-layout.row#menu-portafolio"
+      ]
+    },
+    "flex-layout.row#menu-portafolio": {
+      "children": [
+        "flex-layout.col#menu-portafolio-1"
+      ]
+    },
+    "flex-layout.col#menu-portafolio-1": {
+      "children": [
+        "vtex.menu@2.x:menu#portafolio"
+      ]
+    },
+    "vtex.menu@2.x:menu#portafolio": {
+      "props": {
+        "orientation": "vertical"
+      },
+      "children": [
+        "menu-item#licores",
+        "menu-item#vinos",
+		    "menu-item#empaques",
+        "menu-item#accesorios",
+        "menu-item#burbujas",
+        "menu-item#packs"
+      ]
+    },
+    "menu-item#licores": {
+      "props": {
+        "id": "menu-item-licores",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/licores",
+          "noFollow": true,
+          "tagTitle": "Licores",
+          "text": "Licores"
+        }
+      }
+    },
+    "menu-item#vinos": {
+      "props": {
+        "id": "menu-item-vinos",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/vinos",
+          "noFollow": true,
+          "tagTitle": "Vinos",
+          "text": "Vinos"
+        }
+      }
+    },
+	  "menu-item#empaques": {
+      "props": {
+        "id": "menu-item-empaques",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/empaque",
+          "noFollow": true,
+          "tagTitle": "Empaques",
+          "text": "Empaques"
+        }
+      }
+    },
+	  "menu-item#accesorios": {
+      "props": {
+        "id": "menu-item-accesorios",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/accesorios",
+          "noFollow": true,
+          "tagTitle": "Accesorios",
+          "text": "Accesorios"
+        }
+      }
+    },
+    "menu-item#burbujas": {
+      "props": {
+        "id": "menu-item-burbujas",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/burbujas",
+          "noFollow": true,
+          "tagTitle": "Burbujas",
+          "text": "Burbujas"
+        }
+      }
+    },
+    "menu-item#packs": {
+      "props": {
+        "id": "menu-item-packs",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/packs",
+          "noFollow": true,
+          "tagTitle": "Packs",
+          "text": "Packs"
+        }
+      }
+    },
+  	"menu-item#mobile-portafolio": {
+      "props": {
+        "id": "menu-item-custom-sale",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": true,
+          "tagTitle": "Portafolio",
+          "text": "Portafolio"
+        }
+      },
+      "blocks": [
+        "vtex.menu@2.x:submenu#tecnologia"
+      ]
+    },
+    "vtex.menu@2.x:submenu#tecnologia": {
+      "props": {
+        "width": "100%"
+      },
+      "children": [
+        "flex-layout.row#menu-tecnologia"
+      ]
+    },
+    "flex-layout.row#menu-tecnologia": {
+      "children": [
+        "flex-layout.col#menu-tecnologia-1"
+      ]
+    },
+    "flex-layout.col#menu-tecnologia-1": {
+      "children": [
+        "vtex.menu@2.x:menu#tecnologia"
+      ]
+    },
+    "vtex.menu@2.x:menu#tecnologia": {
+      "props": {
+        "orientation": "vertical"
+      },
+      "children": [
+        "menu-item#televisores",
+        "menu-item#celulares",
+        "menu-item#licores",
+        "menu-item#vinos",
+		    "menu-item#empaques",
+        "menu-item#accesorios",
+        "menu-item#burbujas",
+        "menu-item#packs"
+      ]
+    },
+    "menu-item#televisores": {
+      "props": {
+        "id": "menu-item-televisores",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/tecnologia/televisores",
+          "noFollow": true,
+          "tagTitle": "Televisores",
+          "text": "Televisores"
+        }
+      }
+    },
+    "menu-item#celulares": {
+      "props": {
+        "id": "menu-item-celulares",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/tecnologia/celulares",
+          "noFollow": true,
+          "tagTitle": "Celulares",
+          "text": "Celulares"
+        }
+      }
+    }  
+
+  }
+  

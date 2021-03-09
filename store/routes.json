@@ -1,0 +1,8 @@
+{
+    "store.custom#aniversario": {
+      "path": "/aniversario"
+    },
+    "store.custom#landing": {
+      "path": "/landing"
+    }
+}

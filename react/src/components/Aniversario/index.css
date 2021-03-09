@@ -1,0 +1,22 @@
+.coverPhoto{
+    background-repeat: no-repeat;
+    /*margin-top: -19px;*/
+    background-image: url("https://exito.vteximg.com.br/arquivos/banner-landing-aniversario.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%, cover;
+    
+}
+
+.contentChronometer{
+    padding-top: 25%;
+    padding-bottom: 25%;
+}
+
+@media only screen and (max-width: 600px) {
+    .contentChronometer{
+        padding-top: 54%;
+        padding-bottom: 0%;
+      }
+  }

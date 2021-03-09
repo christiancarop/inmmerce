@@ -1,0 +1,19 @@
+
+.flexRowContent--pre-header-info{
+    background: #FFE800;
+    min-height: 1rem;
+}
+
+.flexRowContent--main-header, .flexRowContent--main-header-mobile {
+    background: #FFE800;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.flexCol--social-style{
+    background-color: #1F1E1E;
+}
+
+.flexColChild--filterCol{
+    width: max-content;
+}

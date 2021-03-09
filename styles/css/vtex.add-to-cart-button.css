@@ -1,0 +1,9 @@
+.buttonDataContainer{
+    color:rgb(255, 255, 255);
+    text-transform: capitalize;
+}
+
+.tooltipLabelText{
+    border-radius: 50px 20px;
+}
+

@@ -1,0 +1,166 @@
+{
+    /***************************DESKTOP***********************/
+    "flex-layout.row#1-desktop":{
+        "children" :["notification.bar"],
+        "props":{
+          "fullWidth": true
+        }
+    },
+
+    "notification.bar":{
+        "props":{
+          "content": "Mitiga el impacto del COVID-19 con el autocuidado, cuidémonos!",
+          "blockClass":"notificationExito"
+        }
+    },
+
+   /* "flex-layout.row#2-desktop" :{
+        "children" :["vtex.menu@2.x:menu#topleft", "header-spacer"],
+        "props":{
+            "fullWidth": true,
+            "blockClass": "pre-header-info"
+          }
+    },
+    "vtex.menu@2.x:menu#topleft":{
+      "children": ["menu-item#1","menu-item#2"]
+    },
+
+  "menu-item#1": {
+      "props": {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "tagTitle": "(4) 604 1919",
+          "text": "(4) 604 1919"
+          },
+          "iconProps": {
+          "id": "hpa-telemarketing",
+          "size": 15,
+          "viewBox": "0 4 16 8",
+          "activeClassName": "emphasis",
+          "mutedClassName": "c-action-primary"
+          }
+  }
+  },
+  "menu-item#2": {
+      "props": {
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "tagTitle": "exito@exito.com",
+          "text": "exito@exito.com"
+        },
+        "iconProps": {
+          "id": "hpa-sobre",
+          "size": 20,
+          "viewBox": "0 0 20 20",
+          "activeClassName": "emphasis",
+          "mutedClassName": "c-action-primary"
+        }
+      }
+  },*/
+
+  "flex-layout.row#3-desktop":{
+      "props": {
+        "blockClass": "main-header",
+        "horizontalAlign": "center",
+        "fullWidth": true,
+        "preventHorizontalStretch":true
+      },
+      "children": [
+        "flex-layout.col#logo-desktop", 
+        "flex-layout.col#categories",
+        "flex-layout.col#search-desktop",
+        "flex-layout.col#login",
+        "flex-layout.col#minicart"
+      ]
+  },
+
+  "flex-layout.col#login":{
+    "children": ["login"],
+    "props": {
+      "horizontalAlign":"right",
+      "verticalAlign":"middle"
+    }
+  },
+
+  "flex-layout.col#minicart":{
+    "children": ["minicart"],
+    "props": {
+      "horizontalAlign":"left",
+      "verticalAlign":"middle"
+    }
+  },
+
+
+    /*******************************MOBILE***********************/
+
+    "header-layout.mobile": {
+      "children": ["flex-layout.row#1-mobile","sticky-layout#1-mobile","search-bar"],
+      "props":{
+        "fullWidth": true
+      }
+    },
+
+    "flex-layout.row#1-mobile":{
+      "children" :["notification.bar"],
+      "props":{
+        "fullWidth": true
+      }
+    },
+
+    "sticky-layout#1-mobile": {
+      "children": ["flex-layout.row#2-mobile"]
+    },
+
+    "flex-layout.row#2-mobile": {
+      "children": [
+        "drawer",
+        "logo#mobile",
+        "flex-layout.col#spacer",
+        "login",
+        "minicart.v2"
+      ],
+      "props": {
+        "blockClass": "main-header-mobile",
+        "preventHorizontalStretch": true,
+        "preserveLayoutOnMobile": true,
+        "fullWidth": true,
+        "verticalAlign":"middle"
+      }
+    },
+    "drawer": {
+      "children": ["menu#drawer"]
+    },
+  
+    "menu#drawer": {
+      "children": [
+        "menu-item#mobile-portafolio",
+        "menu-item#licores"
+      ],
+      "props": {
+        "orientation": "vertical"
+      }
+    },
+  
+    "logo#mobile": {
+      "props": {
+        "title": "Logo",
+        "href": "/",
+        "url": "https://prueba1.vteximg.com.br/arquivos/logo_exito.png",
+        "width": "70",
+        "verticalAlign":"middle",
+        "blockClass":"logoExito"
+      }
+    },
+
+    "flex-layout.col#spacer": {
+      "props": {
+        "width": "grow"
+      }
+    }
+}

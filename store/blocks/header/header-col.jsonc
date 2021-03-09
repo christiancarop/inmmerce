@@ -1,0 +1,101 @@
+{
+    "flex-layout.col#logo-desktop":{
+        "children": ["logo"],
+        "props":{
+            "horizontalAlign": "right",
+            "verticalAlign":"middle"
+        }
+    },
+
+    "flex-layout.col#categories":{
+        "children":["vtex.menu@2.x:menu#websites"],
+        "props":{
+            "horizontalAlign": "center",
+            "verticalAlign":"middle",
+            "preventVerticalStretch": true,
+            "width":"50%"
+        }
+    },
+
+    "vtex.menu@2.x:menu#websites": {
+        "children": [
+          "menu-item#portafolio",
+          "menu-item#aniversario"
+        ]
+      },
+      "menu-item#shop": {
+        "props": {
+          "id": "menu-item-portafolio",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Portafolio",
+            "text": "Portafolio"
+          },
+          "iconProps": {
+            "id": "hpa-grocery",
+            //"size": 16,
+            //"viewBox": "0 0 16 16",
+            "activeClassName": "rebel-pink",
+            "mutedClassName": "c-action-primary"
+          },
+          "iconToTheRight": true
+        }
+      },
+
+    "flex-layout.col#search-desktop":{
+        "children": ["search-bar"]
+    },
+    "flex-layout.col#login-desktop":{
+        "children": ["login"],
+        "props":{
+            "horizontalAlign": "right",
+            "verticalAlign":"middle"
+        }
+    },
+    "flex-layout.col#minicart-desktop":{
+        "children": ["minicart.v2"],
+        "props":{
+            "horizontalAlign": "right",
+            "verticalAlign":"middle",
+            "width":"3%"
+
+        }
+    },
+    "search-bar": {
+        "blocks": ["autocomplete-result-list.v2"],
+        "props": {
+            "openAutocompleteOnFocus": true,
+            "placeholder": "Encuéntralo aquí",
+            "hasIconLeft": false
+
+        }
+    },
+    "logo": {
+        "props": {
+            "width": "70rem",
+            "height": "auto",
+            /*"mobileWidth": 90,
+            "mobileHeight": 32,*/
+            "verticalAlign":"middle",
+            "title":"éxito.com",
+            "url":"https://prueba1.vteximg.com.br/arquivos/logo_exito.png",
+            "href":"/"
+        }
+    },
+
+    "login": {
+        "props": {
+            "emailAndPasswordTitle": "LOG-IN",
+            "accessCodeTitle": "Acess Code LOG-IN",
+            "emailPlaceholder": "e-mail",
+            "passwordPlaceholder": "password",
+            "showPasswordVerificationIntoTooltip": true,
+            "showIconProfile": true,
+            "hideIconLabel": true
+        }
+    }
+}

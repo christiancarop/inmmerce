@@ -1,0 +1,17 @@
+{
+    "helloworld": {
+        "component": "HelloWorld"
+    },
+    "TextAnimator":{
+        "component": "TextAnimator"
+    },
+    "Vinyl":{
+        "component": "Vinyl"
+    },
+    "Aniversario":{
+        "component": "Aniversario"
+    },
+    "Chronometer":{
+        "component": "Chronometer"
+    }
+}

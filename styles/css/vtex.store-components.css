@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);.exito-attended-components-1-x-attendedButton {
+   display: flex;
+   position: fixed;
+   bottom: 6%;
+   background: #ffe800;
+   width: 194px;
+   align-items: center;
+   height: 82px;
+   box-shadow: 0 2px 4px rgba(0,0,0,.27);
+   opacity: 1;
+   left: 0;
+   border-radius: 0 5px 5px 0;
+   cursor: pointer;
+   z-index: 9999
+}
+
+.logoImage--logoExito{
+   margin-top: 1.0rem;
+   vertical-align: middle;
+}
+
+.container--newsFooter{
+   padding: 50px !important;
+   /*background-color: #F7F7F7;*/
+   background-color: #181717f7;
+}
+
+.label--newsFooter{
+   font-size: 20px;
+   color:white;
+   font-family: Poppins,Helvetica,sans-serif!important;
+}
+
+.notificationBarContainer {
+   background-color: #e6f1e6;
+   color: #0095C3;
+   text-decoration: none !important;
+}
+
+.notificationBarInner--notificationExito{
+   background-color: #0095C3;
+   min-height: 2rem;
+   font-family: Poppins,Helvetica,sans-serif!important;
+   color:white;
+   text-decoration: none;
+   text-decoration-color: #0095C3;
+   text-decoration: none !important;
+   text-align: center;
+   font-size: 12px;
+}
+
+.productBrand--namePdp{
+   font-family: Poppins,Helvetica,sans-serif!important;
+   font-size: 30px;
+   color: #0095C3;
+}
+

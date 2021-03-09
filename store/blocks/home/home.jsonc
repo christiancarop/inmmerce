@@ -1,0 +1,51 @@
+{
+  "store.home": { 
+    "blocks": ["flex-layout.row#destacadas", "flex-layout.row#slider"],
+    "props":{
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#destacadas":{
+    "children": ["Vinyl"]
+  },
+
+  "flex-layout.row#slider":{
+    "children": ["slider-layout"]
+  },
+  "slider-layout": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": ["image#1", "image#2", "image#3", "image#4"]
+  },
+
+  "image#1": {
+    "props": {
+      "src": "https://exitocol.vtexassets.com/assets/vtex.file-manager-graphql/images/05c480eb-8d1d-4e07-ab0c-ac089b5ad979___be7ccdb56d17514947d55cab0e72ceaf.png"
+    }
+  },
+  "image#2": {
+    "props": {
+      "src": "https://exitocol.vtexassets.com/assets/vtex.file-manager-graphql/images/6fdf46a1-cbfd-4d66-882b-479d534d90af___fdbcef72032ab5fc115a9ee16cf11ce4.png"
+    }
+  },
+  "image#3": {
+    "props": {
+      "src": "https://exitocol.vtexassets.com/assets/vtex.file-manager-graphql/images/47e77d49-dcf8-4b27-bd8e-3b1388cd21aa___abf9ba863d4bbad8935bbd7e2ad4d8a5.png"
+    }
+  },
+  "image#4": {
+    "props": {
+      "src": "https://exitocol.vtexassets.com/assets/vtex.file-manager-graphql/images/43c469bb-d59b-4a08-bae7-c85643705b34___7eecbfa292b204af8a45a42a0dcd9c8f.png"
+    }
+  }
+  
+
+}

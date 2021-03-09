@@ -1,0 +1,109 @@
+{
+  "store.product": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#product-ppal",
+      "flex-layout.row#product-description"
+    ]
+  },
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 0
+    },
+    "children": ["breadcrumb"]
+  },
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": false
+    }
+  },
+  "flex-layout.row#product-ppal": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 5,
+      "marginTop": 0,
+      "marginBottom": 7,
+      "paddingTop": 1,
+      "paddingBottom": 7
+    },
+    "children": ["flex-layout.col#product-image", "flex-layout.col#right-col"]
+  },
+  "flex-layout.col#product-image": {
+    "props": {
+      "rowGap": 0
+    },
+    "children": ["product-images"]
+  },
+  "flex-layout.col#right-col": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    },
+    "children": [
+      "product-name",
+      "product-separator",
+      "product-list-price",
+      "product-selling-price",
+      //"product-price#product-details",
+      "product-quantity",
+      "product-identifier.product",
+      "rich-text",
+      "sku-selector",
+      "flex-layout.row#buy-button"
+    ]
+  },
+  "product-name":{
+    "props": {
+      "blockClass" :"namePdp"
+    }
+  },
+  "product-list-price":{
+    "props": {
+      "blockClass" :"listPricePdp"
+    }
+  },
+  "product-quantity":{
+    "props": {
+      "blockClass" :"quantityPdp"
+    }
+  },
+  "rich-text": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "<i className='hpa-sobre'></i> Costo de envío: A calcular",
+      "textColor": "success",
+      "font": "t-heading-5",
+      "blockClass": "txtPdp"
+    }
+  },
+  "flex-layout.row#buy-button": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 7
+    },
+    "children": ["buy-button"]
+  },
+  "buy-button":{
+    "props": {
+      "blockClass": "buttonPdp"
+    }
+  },
+  "flex-layout.row#product-description": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 5,
+      "marginTop": 0,
+      "marginBottom": 7,
+      "paddingTop": 1,
+      "paddingBottom": 7
+    },
+    "children": ["product-description"]
+  },
+  "product-description": {
+    "props": {
+      "collapseContent": true,
+      "title": "Sobre este producto"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+/* Se declaran todos los elementos a utlizar en caso de ser común se le coloca el estilo en este archivo de lo contrario se pondrá desde el store*/
+.container{
+}
+
+.title {
+    font-size: 14px;
+}
